@@ -1,0 +1,119 @@
+.nav-logo{
+    height: 35px;
+    padding-left: 150px
+  }
+  
+  .insta-icon{
+    padding-right: 150px;
+    color: #84123F
+  }
+
+  .insta-icon:hover{
+    background-color: white;
+  }
+  
+  nav {
+    background-color: rgb(0, 0, 0);
+    border-bottom: 0px solid black;
+    display: grid;
+    grid-template-columns: 1.5fr 0.4fr 0.4fr 0.4fr 1fr 0.1fr 0.2fr;
+    padding: 10px; 
+    list-style: none; 
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1001;
+  }
+  
+  nav li {
+    color: #84123F;
+    cursor: pointer;
+    font-weight:100;
+    font-size: 16px
+  }
+  
+  nav li:hover {
+    color: rgb(255, 209, 209);
+  }
+  
+  nav a:hover{
+    color: rgb(255, 209, 209);
+    background-color: white;
+  }
+  
+  .menu-icon1{
+    display: none;
+  }
+
+  .parallax-container {
+    display: flex;
+    height: 85vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-attachment: fixed;
+  
+    background-image: url(https://i.ibb.co/crfYv5T/Header-Photo.png);
+    background-position: center;
+    background-size: cover;
+    background-position-y: 60%;
+    color: var(--color);
+    row-gap: 0.5rem;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .nav-title {
+      display: none
+    }
+  
+    .insta-icon {
+      display: none
+    }
+  
+    .menu-icon1{
+      display: block;
+      z-index: 1004;
+      position: fixed;
+      top: 15px;
+      right: 25px;
+      height: 20px;
+      color: #84123F;
+      font-size: 24px;
+    }
+  
+    nav {
+      display: flex;
+      justify-content: flex-start;
+    }
+  
+    .nav-logo{
+      height: 35px;
+      padding-left: 20px
+    }
+
+    .parallax-container {
+      height: 85vh;
+      margin-top: 30px;
+      background-size: 768px auto;
+      background-position-y: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 550px) {
+    .parallax-container {
+      background-size: 550px auto;
+      background-position-y: 0%;
+      height: 65vh;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .parallax-container {
+      height: 65vh;
+      background-size: 600px auto;
+      background-position-y: -5%;
+    }
+  }

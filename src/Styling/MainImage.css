@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'hypatia-sans-pro';
+    src: url('https://use.typekit.net/af/f8d87f/00000000000000003b9adaa2/27/l?subset_id=2&fvd=n4&v=3') format("woff2"),
+         url('https://use.typekit.net/af/f8d87f/00000000000000003b9adaa2/27/d?subset_id=2&fvd=n4&v=3') format("woff"),
+         url('https://use.typekit.net/af/f8d87f/00000000000000003b9adaa2/27/a?subset_id=2&fvd=n4&v=3') format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: auto;
+}
+
+body {
+    font-family: 'hypatia-sans-pro', sans-serif;
+}
+
+.main-image{
+    width: 90%;
+    position: fixed;
+    top: 0
+}
+
+.main-image-title{
+    margin-top: -20px;
+    color:rgb(255, 255, 255);
+    font-size: 90px;
+    margin-bottom: 10px;
+    text-shadow: -0.2px -0.2px 0.2px #000, 0.2px -0.2px 0.2px #000, -0.2px 0.2px 0.2px #000, 0.2px 0.2px 0.2px #000;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-image-title{
+        font-size: 65px
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .main-image-title{
+        font-size: 55px
+    }
+}
