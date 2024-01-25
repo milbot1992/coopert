@@ -1,0 +1,12 @@
+.live-gigs-section {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.live-header {
+  color: white;
+  margin: 0; 
+}

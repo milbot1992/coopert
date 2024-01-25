@@ -11,25 +11,18 @@
 
 body {
     font-family: 'hypatia-sans-pro', sans-serif;
+    margin: 0
 }
 
 .main-image{
-    width: 90%;
+    width: 100%;
     position: fixed;
     top: 0
 }
 
-.main-image-title{
-    margin-top: -20px;
-    color:rgb(255, 255, 255);
-    font-size: 90px;
-    margin-bottom: 10px;
-    text-shadow: -0.2px -0.2px 0.2px #000, 0.2px -0.2px 0.2px #000, -0.2px 0.2px 0.2px #000, 0.2px 0.2px 0.2px #000;
-}
-
 @media only screen and (max-width: 768px) {
-    .main-image-title{
-        font-size: 65px
+    .main-title{
+        height: 65px
     }
 }
 

@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import CoopertLogo from '../assets/LogoSmall.png'
 import InstagramIcon from '@mui/icons-material/Instagram';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import spotifyIcon from '@iconify-icons/mdi/spotify';
+import { Icon } from '@iconify/react';
 import '../Styling/NavAppear.css'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
@@ -36,46 +40,57 @@ export default function Nav() {
   return (
       <motion.div style={{ opacity }}>
           {menuOpen ? (
-                  <CloseIcon className='menu-icon1' fontSize='large' onClick={toggleMenu} />
+                  <CloseIcon className='menu-icon-appear hidden' fontSize='large' onClick={toggleMenu} />
                   ) : (
-                  <MenuIcon className='menu-icon1' fontSize='large' onClick={toggleMenu} />
+                  <MenuIcon className='menu-icon-appear hidden' fontSize='large' onClick={toggleMenu} />
                   )}
               <nav>
                   {menuOpen && (
                   <div className='popup-menu'>
-                      <li className='menu-item' onClick={() => handleLinkClick('about')}>
+                      <li className='menu-item' onClick={() => handleLinkClick('music')}>
                       MUSIC
                       </li>
-                      <li className='menu-item' onClick={() => handleLinkClick('calendar')}>
+                      <li className='menu-item' onClick={() => handleLinkClick('video')}>
                       VIDEO
                       </li>
-                      <li className='menu-item' onClick={() => handleLinkClick('quotes')}>
+                      <li className='menu-item' onClick={() => handleLinkClick('live')}>
                       LIVE
                       </li>
-                      <li className='menu-item' onClick={() => handleLinkClick('contact')}>
+                      <li className='menu-item' onClick={() => handleLinkClick('shop')}>
                       SHOP
                       </li>
                   </div>
                   )}
               <li>
-                  <img src={CoopertLogo} className='nav-logo' onClick={() => handleLinkClick('background')}></img>
+                  <img src={CoopertLogo} className='nav-logo' onClick={() => handleLinkClick('nav-initial')}></img>
               </li>
-                  <li className='nav-title' onClick={() => handleLinkClick('about')}>
+                  <li className='nav-title' onClick={() => handleLinkClick('music')}>
                       MUSIC
                   </li>
-                  <li className='nav-title' onClick={() => handleLinkClick('calendar')}>
+                  <li className='nav-title' onClick={() => handleLinkClick('video')}>
                       VIDEO
                   </li>
-                  <li className='nav-title' onClick={() => handleLinkClick('quotes')}>
+                  <li className='nav-title' onClick={() => handleLinkClick('live')}>
                       LIVE
                   </li>
-                  <li className='nav-title' onClick={() => handleLinkClick('contact')}>
+                  <li className='nav-title' onClick={() => handleLinkClick('shop')}>
                       SHOP
                   </li>
               <li>
+                <div className='social-icons-grid'>
                   <a className='insta-icon' href="https://www.instagram.com/cooooper.t/" target="_blank" rel="noopener noreferrer">
                       <InstagramIcon />
                   </a>
+                  <a className='insta-icon' href="https://www.youtube.com/@coopertv1124" target="_blank" rel="noopener noreferrer">
+                      <YouTubeIcon />
+                  </a>
+                  <a className='insta-icon' href="https://open.spotify.com/artist/7t6usUnb0OZ2r0pi3nvdmB" target="_blank" rel="noopener noreferrer">
+                    <Icon className='spotify-icon' style={{ fontSize: '24px' }} icon={spotifyIcon} />
+                </a>
+                  <a className='insta-icon' href="https://www.facebook.com/cooooper.t/?locale=en_GB%C3%A5" target="_blank" rel="noopener noreferrer">
+                      <FacebookIcon />
+                  </a>
+                </div>
               </li>
           </nav>
       </motion.div>

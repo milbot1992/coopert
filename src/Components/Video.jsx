@@ -8,6 +8,7 @@ const videoUrls = [
   'https://www.youtube.com/embed/6iW-yc-g7ns',
   'https://www.youtube.com/embed/BX9UkVoGRj8',
   'https://www.youtube.com/embed/Mb2xtx5VmTU',
+  'https://www.youtube.com/embed/fdJA117cOd4'
 ];
 
 export default function Video() {
@@ -40,10 +41,11 @@ export default function Video() {
         </div>
 
         <div className="video-title">
-            {currentVideoIndex === 0 && "Cooper T - Original"}
-            {currentVideoIndex === 1 && "Cooper T - Scared"}
-            {currentVideoIndex === 2 && "Cooper T - Gettin' In The Way"}
-            {currentVideoIndex === 3 && "Cooper T - Best Of You"}
+            {currentVideoIndex === 0 && "COOPER T - ORIGINAL"}
+            {currentVideoIndex === 1 && "COOPER T - SCARED"}
+            {currentVideoIndex === 2 && "COOPER T - GETTIN' IN THE WAY"}
+            {currentVideoIndex === 3 && "COOPER T - BEST OF YOU"}
+            {currentVideoIndex === 4 && "COOPER T FEAT. EVABEE - OUTSIDE LOOKING IN"}
         </div>
     </div>
   );

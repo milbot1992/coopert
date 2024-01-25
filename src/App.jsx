@@ -1,31 +1,30 @@
 import Video from './Components/Video'
 import MainImage from './Components/MainImage'
-import CalendarPage from './Components/Calendar'
-import Contact from './Components/Contact'
+import LiveSection from './Components/Live'
+import Contact from './Components/Shop'
 import NavAppear from './Components/NavAppear'
 import '../src/Styling/NavAppear.css'
 import NavInitial from './Components/NavInitial'
-import Quotes from './Components/Quotes'
+import Shop from './Components/Shop'
 
 function App() {
   return (
       <>
+        <div id="nav-initial">
           <NavInitial/>
+        </div>
           <NavAppear/>
         <section class="parallax-container">
           <MainImage/>
         </section>
-        <div id="about">
+        <div id="video">
           <Video/>
         </div>
-        <div id="calendar">
-          <CalendarPage/>
+        <div id="live">
+          <LiveSection/>
         </div>
-        <div id="quotes">
-          <Quotes/>
-        </div>
-        <div id="contact">
-          <Contact/>
+        <div id="shop">
+          <Shop/>
         </div>
       </>
     )
